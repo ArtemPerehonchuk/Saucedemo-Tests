@@ -224,7 +224,7 @@ describe('Saucedemo', () => {
         expect(await browser).toHaveUrl('https://www.saucedemo.com/cart.html');
 
         await cartPage.checkItOut();
-        expext(await cartPage.cartErrorMessage.isDisplayed()).toBe(true);
+        expect(await cartPage.cartErrorMessage.isDisplayed()).toBe(true);
 
     //The test is failed due to the bug on the website.
         
